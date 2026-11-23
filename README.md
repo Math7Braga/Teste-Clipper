@@ -1,5 +1,7 @@
 # Clipper do GTA 6
 
+Baseada no [Clipper do GTA 6 original](https://github.com/davixavier-coder/skill-clips), com o modo "trecho" (cortar um pedaço escolhido, inclusive de live ao vivo com DVR).
+
 Uma skill grátis pro Claude Code que transforma lives longas de streamers em cortes verticais prontos pra postar.
 
 Você manda o link de uma live (YouTube, Twitch ou Kick), ou pede as maiores lives de GTA 6 do dia, e recebe:
@@ -46,12 +48,12 @@ Sem terminal. Os cortes saem mais rápido e as escolhas ficam bem melhores.
 
 Cole no Claude Code:
 
-> instala essa skill e monta o clipper do GTA 6: https://github.com/davixavier-coder/skill-clips
+> instala essa skill e monta o clipper do GTA 6: https://github.com/Math7Braga/Teste-Clipper
 
 Se a IA ficar em loop ou der erro, cole o comando direto (serve também pra **atualizar**):
 
-- **Mac:** `curl -fsSL https://raw.githubusercontent.com/davixavier-coder/skill-clips/main/instalar.sh | bash`
-- **Windows (PowerShell):** `irm https://raw.githubusercontent.com/davixavier-coder/skill-clips/main/instalar.ps1 | iex`
+- **Mac:** `curl -fsSL https://raw.githubusercontent.com/Math7Braga/Teste-Clipper/main/instalar.sh | bash`
+- **Windows (PowerShell):** `irm https://raw.githubusercontent.com/Math7Braga/Teste-Clipper/main/instalar.ps1 | iex`
 
 Ele baixa a skill, confere o que falta no seu computador, instala sozinho (inclusive o ffmpeg) e avisa quando tá pronto.
 

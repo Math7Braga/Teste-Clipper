@@ -29,8 +29,8 @@ Fale com a pessoa em português simples, uma frase por vez, sem jargão. Ela nã
 
 Rode **um comando só** (baixa a skill, arruma o Python sozinho se faltar e instala tudo; pode levar uns minutos):
 
-- Mac/Linux: `curl -fsSL https://raw.githubusercontent.com/davixavier-coder/skill-clips/main/instalar.sh | bash`
-- Windows (PowerShell): `irm https://raw.githubusercontent.com/davixavier-coder/skill-clips/main/instalar.ps1 | iex`
+- Mac/Linux: `curl -fsSL https://raw.githubusercontent.com/Math7Braga/Teste-Clipper/main/instalar.sh | bash`
+- Windows (PowerShell): `irm https://raw.githubusercontent.com/Math7Braga/Teste-Clipper/main/instalar.ps1 | iex`
 
 Quando aparecer **TUDO PRONTO**, diga: "Pronto, o clipper tá instalado. É só me mandar o link de uma live (YouTube,
 Twitch ou Kick) ou pedir as maiores lives de GTA 6 de hoje."

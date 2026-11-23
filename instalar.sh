@@ -1,11 +1,11 @@
 #!/bin/bash
 # Instala (ou atualiza) o Clipper do GTA 6 no Mac/Linux com um comando só:
-#   curl -fsSL https://raw.githubusercontent.com/davixavier-coder/skill-clips/main/instalar.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/Math7Braga/Teste-Clipper/main/instalar.sh | bash
 set -e
 DEST="$HOME/.claude/skills/clipper-gta6"
 echo "Baixando a skill pra $DEST…"
 mkdir -p "$DEST"
-curl -fsSL https://github.com/davixavier-coder/skill-clips/archive/refs/heads/main.tar.gz \
+curl -fsSL https://github.com/Math7Braga/Teste-Clipper/archive/refs/heads/main.tar.gz \
   | tar -xz --strip-components=1 -C "$DEST"
 echo "✓ skill no lugar"
 

@@ -1,11 +1,11 @@
 # Instala (ou atualiza) o Clipper do GTA 6 no Windows com um comando só (PowerShell):
-#   irm https://raw.githubusercontent.com/davixavier-coder/skill-clips/main/instalar.ps1 | iex
+#   irm https://raw.githubusercontent.com/Math7Braga/Teste-Clipper/main/instalar.ps1 | iex
 $ErrorActionPreference = "Stop"
 $dest = Join-Path $HOME ".claude\skills\clipper-gta6"
 Write-Host "Baixando a skill pra $dest..."
 New-Item -ItemType Directory -Force -Path $dest | Out-Null
-$tgz = Join-Path $env:TEMP "skill-clips.tar.gz"
-curl.exe -fsSL "https://github.com/davixavier-coder/skill-clips/archive/refs/heads/main.tar.gz" -o $tgz
+$tgz = Join-Path $env:TEMP "teste-clipper.tar.gz"
+curl.exe -fsSL "https://github.com/Math7Braga/Teste-Clipper/archive/refs/heads/main.tar.gz" -o $tgz
 tar.exe -xzf $tgz --strip-components=1 -C $dest
 Write-Host "OK: skill no lugar"
 # daqui pra frente, aviso de programa (stderr) nao pode derrubar a instalacao: no PowerShell 5.1 com "Stop",
