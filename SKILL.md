@@ -115,6 +115,12 @@ Saída: `~/clipper-gta6/cortes/NOME/corte_01.mp4` + `corte_01.txt` (legenda do p
 Diga onde estão e que é só postar. No Mac, abra a pasta pra pessoa: `open ~/clipper-gta6/cortes/NOME`
 (Windows: `explorer "$HOME\clipper-gta6\cortes\NOME"`).
 
+### 2.5 Thumbnails
+O `fazer` já faz sozinho, no fim, a thumbnail de cada corte: `thumb_01.jpg` (1280×720, YouTube) e `capa_01.jpg`
+(1080×1920, capa de Shorts/Reels/TikTok), na mesma pasta dos vídeos. Pega o quadro do grito mais alto, amplia o rosto do
+streamer e escreve o título do corte bem grande. Pra refazer: `thumb NOME` (ou `thumb NOME --corte 3` pra uma só).
+Se você mudou o título de um corte no JSON, rode `escolher` e `fazer` de novo (ele refaz as thumbs também).
+
 ## 2B. "Corta só esse pedaço da live" / live que está rolando AGORA (precisa do DVR ligado)
 
 Use quando a pessoa disser o horário do momento ("de 1h32 até 1h36", "os últimos 8 minutos") ou quando a live ainda

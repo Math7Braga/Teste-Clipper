@@ -538,4 +538,10 @@ def fazer(pasta, modelo_legenda="small"):
         if velho.stem not in {f.stem for f in feitos}:
             velho.unlink(missing_ok=True)
     print(f"\n{len(feitos)} cortes prontos pra postar em {destino}")
+    try:  # thumbnail de cada corte; se der algum erro, os vídeos continuam prontos
+        from thumb import gerar as gerar_thumbs
+        print("\nFazendo as thumbnails…", flush=True)
+        gerar_thumbs(pasta)
+    except Exception as erro:  # noqa: BLE001
+        print(f"(não consegui fazer as thumbnails: {erro}. Rode depois: clip thumb {pasta.name})")
     return feitos
