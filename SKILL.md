@@ -88,16 +88,33 @@ Formato de `momentos/candidatos.json`:
     "fim": "01:12:41",
     "nota": 88,
     "tipo": "primeira reação",
-    "titulo": "ELE NÃO ACREDITOU NO TAMANHO DO MAPA",
+    "titulo": "ESSE MAPA NÃO TEM FIM E ELE SURTOU",
     "porque": "grita ao ver o mapa inteiro; fecha sozinho sem precisar de contexto",
-    "post": "O tamanho do mapa do GTA 6 deixou ele sem palavras 😳 #gta6 #gtavi #gta #cortes #streamer"
+    "post": "Ele abriu o mapa do GTA 6 e perdeu a voz. Você esperava esse tamanho? 😳 #gta6 #gtavi #gta #cortes #streamer"
   }
 ]
 ```
 
-- `titulo`: o gancho que vai escrito no vídeo. Curto (até ~45 letras), em MAIÚSCULAS, na língua da live, sem
-  spoiler do final. Use o nome ou apelido do streamer quando ajudar ("CASIMIRO NÃO ACREDITOU…").
+- `titulo`: o gancho que vai escrito no vídeo e na thumbnail. Curto (até ~45 letras), em MAIÚSCULAS, na língua da
+  live, sem spoiler do final. Use o nome ou apelido do streamer quando ajudar ("CASIMIRO NÃO ACREDITOU…").
 - `post`: legenda do post, 1–2 frases + 4 a 6 hashtags (sempre `#gta6`).
+
+**Título e legenda têm que ser CHAMATIVOS e EMPOLGANTES** (pedido do dono do canal). A pessoa decide em 1 segundo
+se para de rolar o feed, então cada frase tem que ter efeito:
+- **Abra a curiosidade e não feche:** "NINGUÉM ESPERAVA O QUE TINHA DENTRO DO BARCO", "ELE NÃO DEVIA TER APERTADO ESSE
+  BOTÃO", "O QUE ACONTECEU AQUI É ABSURDO".
+- **Exagere a emoção que existiu de verdade:** "SURTOU", "PERDEU A CABEÇA", "FICOU SEM PALAVRAS", "QUASE CHOROU",
+  "O CHAT EXPLODIU". Verbo forte, nada de "ficou surpreso" ou "achou legal".
+- **Use número e contraste quando tiver:** "15 HORAS DE LIVE E AINDA RECLAMARAM", "NO GTA 5 ISSO ERA IMPOSSÍVEL".
+- **Fale com quem assiste:** "VOCÊ NÃO VAI ACREDITAR…", "REPARA NO FUNDO…", "ESPERA ATÉ O FINAL".
+- **Sem frase morna, sem explicação:** corte artigo e palavra de enchimento. "O MAPA DO GTA 6 É GIGANTE" →
+  "ESSE MAPA NÃO TEM FIM 😳".
+- **Legenda do post:** comece com uma frase de impacto (gancho ou pergunta que provoca comentário: "Você teria
+  coragem?", "Isso é bug ou é genial?"), depois 1 emoji forte e as hashtags. Pode usar 1–2 emojis, não encha.
+- **Varie:** não repita a mesma fórmula em todos os cortes da mesma live.
+- **Limite: chamativo, não mentiroso.** O que o título promete tem que aparecer no corte. Se o título enganar, quem
+  assiste sai antes do fim, a plataforma derruba o alcance e o streamer fica mal visto. Nada de inventar morte,
+  briga, polêmica ou spoiler que não existe.
 
 Se a pessoa quiser os melhores da live INTEIRA (mais lento), leia também os `blocos/bloco_NN.txt` e escreva
 `momentos/bloco_NN.json` no mesmo formato.
