@@ -9,6 +9,7 @@ Você manda o link de uma live (YouTube, Twitch ou Kick), ou pede as maiores liv
 - o corte vertical (1080×1920): câmera do streamer em cima, jogo embaixo
 - título de gancho e legenda palavra por palavra
 - um `.txt` com a legenda do post, as hashtags e o crédito da live
+- a thumbnail de cada corte: `thumb_NN.jpg` (YouTube, 1280×720) e `capa_NN.jpg` (Shorts/Reels/TikTok, 1080×1920)
 
 ## O que ela faz, em 4 passos
 

@@ -28,7 +28,7 @@ from comum import CASA, CORTES, MODELOS, TRABALHO, YUNET, YUNET_URL, ffmpeg_embu
 
 VENV = CASA / "ambiente"
 VENV_PY = VENV / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
-PACOTES = ["faster-whisper", "opencv-python-headless", "numpy", "yt-dlp[default]", "certifi", "static-ffmpeg", "deno"]
+PACOTES = ["faster-whisper", "opencv-python-headless", "numpy", "yt-dlp[default]", "certifi", "static-ffmpeg", "deno", "pillow"]
 
 
 def no_ambiente():
@@ -289,6 +289,11 @@ def _trabalho(a):
         tarefa.executar(pasta, "fazer", lambda: faz(pasta, a.args[1] or "small"))
 
 
+def thumb(a):
+    from thumb import thumb as gerar_thumb
+    gerar_thumb(a)
+
+
 def status(_):
     if not TRABALHO.exists() or not any(TRABALHO.iterdir()):
         print("Nenhuma live ainda.")
@@ -377,6 +382,10 @@ def main():
             x.add_argument("--trechos", type=int, default=24, help="máximo de pedaços de 2,5 min que a IA lê")
             x.add_argument("--esperar", type=int, default=None)
         x.set_defaults(f=fn)
+    th = sub.add_parser("thumb", help="thumbnail chamativa de cada corte (YouTube + capa vertical)")
+    th.add_argument("live")
+    th.add_argument("--corte", type=int, default=None, help="só este corte (1, 2, 3…)")
+    th.set_defaults(f=thumb)
     sub.add_parser("status").set_defaults(f=status)
     a = ap.parse_args()
     if getattr(a, "esperar", 0) is None:
